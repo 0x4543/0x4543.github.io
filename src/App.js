@@ -1,7 +1,7 @@
 // App.js
 
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import LatestNews from "./pages/LatestNews";
 import ContactForm from "./pages/ContactForm";
 import "./styles.css";
