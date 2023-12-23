@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Стили для навигационного меню */
+nav {
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff4500;
+}
+
+/* Стили для Home */
+.home {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Стили для LatestNews */
+.latest-news {
+  padding: 20px;
+}
+
+.latest-news h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.news-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h2 {
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.news-item a {
+  display: block;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #ff4500;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.news-item a:hover {
+  background-color: #d13232;
+}

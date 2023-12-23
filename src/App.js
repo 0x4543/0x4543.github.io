@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
 
-function App() {
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import LatestNews from "./pages/LatestNews";
+import ContactForm from "./pages/ContactForm";
+import "./styles.css";
+
+const Home = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Welcome to the Home Page!</h1>
     </div>
   );
-}
+};
+
+const App = () => {
+  return (
+    <Router>
+      <div className="App">
+        <nav>
+          <ul className="menu">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/latest-news/">Latest News</Link>
+            </li>
+            <li>
+              <Link to="/contact/">Contact Me</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/latest-news/" element={<LatestNews />} />
+          <Route path="/contact/" element={<ContactForm />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
 export default App;
