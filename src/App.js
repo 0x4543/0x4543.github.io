@@ -28,8 +28,10 @@ const Home = () => {
       </div>
       <p className="welcome-text">
         Welcome to my website! Here, you'll find information about me and a way
-        to get in touch. Explore the world of crypto with me and stay updated on
-        the latest trends and discussions.
+        to get in touch.
+        <br />
+        Explore the world of crypto with me and stay updated on the latest
+        trends and discussions.
       </p>
       <p className="welcome-text">
         <Link to="/contact/">Feel free to reach out and connect!</Link>
