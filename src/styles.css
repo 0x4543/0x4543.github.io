@@ -1,6 +1,72 @@
-/* styles.css */
+.home-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-/* Общие стили */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-info h1 {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.profile-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.profile-info a {
+  text-decoration: none;
+  color: #ff4500;
+  font-weight: bold;
+}
+
+.welcome-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* ... (ваш текущий CSS) */
+
+.profile-info a {
+  text-decoration: none;
+  color: #ff4500;
+  font-weight: bold;
+  border-bottom: 2px dashed #ff4500;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.profile-info a:hover {
+  border-bottom: 2px dashed transparent;
+}
+
+.welcome-text a {
+  text-decoration: none;
+  color: #ff4500;
+  border-bottom: 1px dashed #ff4500;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.welcome-text a:hover {
+  border-bottom: 2px dashed transparent;
+}
+
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,7 +80,7 @@ body {
   overflow: hidden;
 }
 
-/* Стили для навигационного меню */
+
 nav {
   background-color: #333;
   color: white;
@@ -42,58 +108,3 @@ nav ul li a:hover {
   color: #ff4500;
 }
 
-/* Стили для Home */
-.home {
-  text-align: center;
-  padding: 50px 0;
-}
-
-/* Стили для LatestNews */
-.latest-news {
-  padding: 20px;
-}
-
-.latest-news h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.news-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.news-item {
-  width: calc(33.33% - 20px);
-  margin: 10px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.news-item h2 {
-  margin-bottom: 10px;
-}
-
-.news-item p {
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.news-item a {
-  display: block;
-  text-align: center;
-  padding: 5px 10px;
-  background-color: #ff4500;
-  color: white;
-  text-decoration: none;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-.news-item a:hover {
-  background-color: #d13232;
-}
