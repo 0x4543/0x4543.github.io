@@ -3,6 +3,7 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ContactForm from "./pages/ContactForm";
+import EthereumPrice from "./EthereumPrice";
 import "./styles.css";
 
 const Home = () => {
@@ -36,6 +37,7 @@ const Home = () => {
       <p className="welcome-text">
         <Link to="/contact/">Feel free to reach out and connect!</Link>
       </p>
+      <EthereumPrice />
     </div>
   );
 };
