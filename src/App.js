@@ -30,9 +30,6 @@ const Home = () => {
       <p className="welcome-text">
         Welcome to my website!
       </p>
-      <p className="welcome-text">
-        <Link to="/contact/">Feel free to reach out and connect!</Link>
-      </p>
       <EthereumPrice />
     </div>
   );
